@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import img1 from "./../img/work1.jpg";
-import img2 from "./../img/work2.jpg";
-import img3 from "./../img/work3.jpg";
-import img4 from "./../img/work4.jpg";
-import img5 from "./../img/work5.jpg";
-import CardSlid from "./CardSlid";
-import Slid from "./Slid";
+import img2 from "./../img/work2.png";
+import img3 from "./../img/work3.png";
+import img4 from "./../img/work4.png";
+import img5 from "./../img/work5.png";
 
 class WorksContains extends Component {
   constructor(props) {
