@@ -2,11 +2,16 @@ import { createBrowserRouter } from "react-router-dom";
 import LandingPage from "src/pages/LandingPage.js";
 
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <LandingPage />,
+    },
+  ],
   {
-    path:'/',
-    element:<LandingPage />
+    basename: "/Portfolio",
   }
-])
+);
 
 export default router
