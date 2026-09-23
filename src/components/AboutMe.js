@@ -6,7 +6,7 @@ export default function AboutMe() {
     const screenFalg = useIsMobile(768)
     const downloadCV = () => {
         const link = document.createElement('a');
-        link.href = "/files/Mahmoud-CV.pdf";
+        link.href = `${process.env.PUBLIC_URL}/files/Mahmoud-CV.pdf`;
         link.download = 'Mahmoud-Alahmad-CV';
         document.body.appendChild(link);
         link.click();
