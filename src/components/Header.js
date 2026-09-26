@@ -49,11 +49,11 @@ function Header() {
         </div>
       </nav>
       <div className={navBarState ? 'row text-center d-flex gap-1' : 'row text-center d-none'}>
-            <a className="nav-item nav-link text-light" href="#/home" onClick={() => toggleNavBar()}>Home</a>
-            <a className="nav-item nav-link text-light" href="#/about" onClick={() => toggleNavBar()}>About</a>
-            <a className="nav-item nav-link text-light" href="#/skills" onClick={() => toggleNavBar()}>Skills</a>
-            <a className="nav-item nav-link text-light" href="#/projects" onClick={() => toggleNavBar()}>Projects</a>
-            <a className="nav-item nav-link text-light" href="#/contact" onClick={() => toggleNavBar()}>Contact</a>
+            <a className="nav-item nav-link text-light mobile-nav-item" href="#/home" onClick={() => toggleNavBar()}>Home</a>
+            <a className="nav-item nav-link text-light mobile-nav-item" href="#/about" onClick={() => toggleNavBar()}>About</a>
+            <a className="nav-item nav-link text-light mobile-nav-item" href="#/skills" onClick={() => toggleNavBar()}>Skills</a>
+            <a className="nav-item nav-link text-light mobile-nav-item" href="#/projects" onClick={() => toggleNavBar()}>Projects</a>
+            <a className="nav-item nav-link text-light mobile-nav-item" href="#/contact" onClick={() => toggleNavBar()}>Contact</a>
       </div>
     </div>
   )

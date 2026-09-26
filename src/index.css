@@ -191,8 +191,8 @@ code {
 /* Header style */
 .header-bg {
     background-color: rgba(18, 18, 18, 0.05);
-    backdrop-filter: blur(var(--blur));
-    -webkit-backdrop-filter: blur(var(--blur));
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
 }
 
 .brand-style {
