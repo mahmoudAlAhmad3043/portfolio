@@ -12,14 +12,73 @@ export default function Contact() {
     message: ''
   })
 
+  const [error, setError] = useState({
+    name:'',
+    email: '',
+    subject: '',
+    message: '',
+  })
+
+  const [submitStatus, setSubmitStatus] = useState('')
+
+    const validateInput = (event) => {
+    const nameRegex = /^[A-Za-z\u0600-\u06FF]+(?: [A-Za-z\u0600-\u06FF]+)*$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const subjectRegex = /^[A-Za-z0-9\u0600-\u06FF\s.,!?'"()\-]{3,100}$/;
+    const messageRegex = /^[\s\S]{10,1000}$/;
+
+    let value = event.target.value.trim()
+    let name = event.target.name
+    switch (name) {
+      case 'name': 
+        if(!value.length) UpdateError(name,'Name is required')
+        else if(!(value.length >= 3 && value.length <= 50 && nameRegex.test(value))) UpdateError(name,'Your name invalid')
+        else UpdateError(name,null)
+        break;
+      case 'email':
+        if(!value.length) UpdateError(name,'Email is required')
+        else if(!emailRegex.test(value)) UpdateError(name,'Your email invalid')
+        else UpdateError(name,null)
+        break;
+      case 'subject': 
+        if(!value.length) UpdateError(name,'Subject is required')
+        else if(!(subjectRegex.test(value))) UpdateError(name,'Your subject invalid')
+        else UpdateError(name,null)
+        break;
+      case 'message': 
+        if(!value.length) UpdateError(name,'Message is required')
+        else if(!(messageRegex.test(value))) UpdateError(name,'Your message invalid')
+        else UpdateError(name,null)
+        break;
+      default:
+        break;
+    }
+  }
+
   const handleMessage = (event) => {
     setObject((prevMessage) => ({...prevMessage,[event.target.name]:event.target.value}))
+    validateInput(event)
+  }
+
+  const UpdateError = (name,value) => {
+    setError((prevError) => ({...prevError,[name]:value}))
   }
 
   const submitMessage = (event) => {
     event.preventDefault();
+    if(error.name !== null || error.email !== null || error.subject !== null || error.message !== null) {
+      setSubmitStatus('Please Enter valid information')
+      return
+    }
+    setSubmitStatus('')
     sendEmail(event.target);
     setObject((prevMessage) => ({...prevMessage,
+    name:'',
+    email: '',
+    subject: '',
+    message: ''}))
+
+    setError((prevError) => ({...prevError,
     name:'',
     email: '',
     subject: '',
@@ -73,24 +132,29 @@ export default function Contact() {
             <div className='input-container d-flex flex-column'>
               <label className=''>NAME</label>
               <input placeholder='Ali Ahmad' className='rounded-3 p-2' type='text' name='name' value={object.name} onChange={(e) => handleMessage(e)}/>
+              {error.name ? <p className='error-message'>{error.name}</p> : null}
             </div>
 
             <div className='input-container d-flex flex-column'>
               <label>EMAIL</label>
               <input placeholder='ali@gmail.com' className='rounded-3 p-2' type='email' name='email' value={object.email} onChange={(e) => handleMessage(e)}/>
+              {error.email ? <p className='error-message'>{error.email}</p> : null}
             </div>
 
             <div className='input-container d-flex flex-column'>
               <label className=''>SUBJECT</label>
               <input placeholder='Enter your subject' className='rounded-3 p-2' type='text' name='subject' value={object.subject} onChange={(e) => handleMessage(e)}/>
+              {error.subject ? <p className='error-message'>{error.subject}</p> : null}
             </div>
 
             <div className='input-container d-flex flex-column'>
               <label>MESSAGE</label>
               <textarea placeholder='Enter your message' className='rounded-3 p-2' type='text' name='message' value={object.message} onChange={(e) => handleMessage(e)}/>
+              {error.message ? <p className='error-message'>{error.message}</p> : null}
             </div>
 
             <button type='submit' className='send-message-btn rounded-3 p-2 w-100'>Send Message</button>
+            {submitStatus ? <p className='error-message mt-2'>{submitStatus}</p> : null}
           </form>
         </div>
       </div>
