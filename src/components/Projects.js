@@ -48,8 +48,8 @@ export default function Projects() {
       subTitle: "Portfolio",
       description: "This is my portfolio, it was developed using React",
       tags: ["React"],
-      gitHubLink:'https://github.com/mahmoudAlAhmad3043/Portfolio',
-      demoLinks: "https://mahmoudAlAhmad3043.github.io/Portfolio/"
+      gitHubLink:'https://github.com/mahmoudAlAhmad3043/portfolio',
+      demoLinks: "https://mahmoudAlAhmad3043.github.io/portfolio/"
     },
   ];
   return (

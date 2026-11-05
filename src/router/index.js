@@ -10,7 +10,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/Portfolio",
+    basename: "/portfolio",
   }
 );
 
