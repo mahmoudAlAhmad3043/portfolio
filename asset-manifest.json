@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.197015f6.css",
-    "main.js": "/Portfolio/static/js/main.5217030b.js",
-    "static/js/453.991fd9c5.chunk.js": "/Portfolio/static/js/453.991fd9c5.chunk.js",
-    "static/media/landing-img.jpg": "/Portfolio/static/media/landing-img.92cef61225df8bfe7875.jpg",
-    "static/media/development-about.jpg": "/Portfolio/static/media/development-about.1a71606c348f86ee2f5b.jpg",
-    "static/media/about-bg-2.jpg": "/Portfolio/static/media/about-bg-2.6f9a3e53ffe892f5015c.jpg",
-    "static/media/Poppins-Regular.ttf": "/Portfolio/static/media/Poppins-Regular.1c701c9a6b587802e3d0.ttf",
-    "static/media/projects-bg.jpg": "/Portfolio/static/media/projects-bg.7c56076204cb294df49a.jpg",
-    "static/media/landing-mobile-img.jpg": "/Portfolio/static/media/landing-mobile-img.075a088739f47b3578c2.jpg",
-    "static/media/mahmoud.jpg": "/Portfolio/static/media/mahmoud.f2f63dfd1736b1eef6e3.jpg",
-    "static/media/code-solid.png": "/Portfolio/static/media/code-solid.86d71369df6e4518a70d.png",
-    "index.html": "/Portfolio/index.html",
-    "main.197015f6.css.map": "/Portfolio/static/css/main.197015f6.css.map",
-    "main.5217030b.js.map": "/Portfolio/static/js/main.5217030b.js.map",
-    "453.991fd9c5.chunk.js.map": "/Portfolio/static/js/453.991fd9c5.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.cf7f1b9f.css",
+    "main.js": "/portfolio/static/js/main.50ff54a6.js",
+    "static/js/453.991fd9c5.chunk.js": "/portfolio/static/js/453.991fd9c5.chunk.js",
+    "static/media/landing-img.jpg": "/portfolio/static/media/landing-img.92cef61225df8bfe7875.jpg",
+    "static/media/development-about.jpg": "/portfolio/static/media/development-about.1a71606c348f86ee2f5b.jpg",
+    "static/media/about-bg-2.jpg": "/portfolio/static/media/about-bg-2.6f9a3e53ffe892f5015c.jpg",
+    "static/media/Poppins-Regular.ttf": "/portfolio/static/media/Poppins-Regular.1c701c9a6b587802e3d0.ttf",
+    "static/media/projects-bg.jpg": "/portfolio/static/media/projects-bg.7c56076204cb294df49a.jpg",
+    "static/media/landing-mobile-img.jpg": "/portfolio/static/media/landing-mobile-img.075a088739f47b3578c2.jpg",
+    "static/media/mahmoud.jpg": "/portfolio/static/media/mahmoud.f2f63dfd1736b1eef6e3.jpg",
+    "static/media/code-solid.png": "/portfolio/static/media/code-solid.86d71369df6e4518a70d.png",
+    "index.html": "/portfolio/index.html",
+    "main.cf7f1b9f.css.map": "/portfolio/static/css/main.cf7f1b9f.css.map",
+    "main.50ff54a6.js.map": "/portfolio/static/js/main.50ff54a6.js.map",
+    "453.991fd9c5.chunk.js.map": "/portfolio/static/js/453.991fd9c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.197015f6.css",
-    "static/js/main.5217030b.js"
+    "static/css/main.cf7f1b9f.css",
+    "static/js/main.50ff54a6.js"
   ]
 }
